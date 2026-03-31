@@ -1,0 +1,23 @@
+[project]
+name = "claude-code-py"
+version = "0.1.0"
+description = "Python port of the Claude Code agent loop architecture."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.40.0"]
+
+[project.scripts]
+claude-code-py = "claude_code_py.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]

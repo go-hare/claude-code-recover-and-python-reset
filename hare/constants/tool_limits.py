@@ -1,0 +1,14 @@
+"""
+Tool limits and thresholds.
+
+Port of: various tool limit constants across src/
+"""
+
+MAX_FILE_READ_LINES = 2000
+MAX_FILE_READ_SIZE = 500_000
+MAX_FILE_WRITE_SIZE = 500_000
+MAX_GREP_RESULTS = 500
+MAX_GLOB_RESULTS = 500
+MAX_BASH_OUTPUT = 30_000
+MAX_SEARCH_RESULTS = 100
+MAX_TOOL_RESULT_SIZE = 100_000

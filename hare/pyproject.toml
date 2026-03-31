@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hare"
+version = "2.1.88"
+description = "Python port of Claude Code CLI (recovered from sourcemap v2.1.88)"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.80.0"]
+
+[project.scripts]
+hare = "hare.entrypoints.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["hare*"]

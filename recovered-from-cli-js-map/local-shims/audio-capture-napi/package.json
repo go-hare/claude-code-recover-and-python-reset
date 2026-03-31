@@ -1,0 +1,8 @@
+{
+  "name": "audio-capture-napi",
+  "version": "0.0.0-recovered-shim",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  }
+}
